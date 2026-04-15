@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ruben Röösli – Webdesigner & Entwickler aus der Schweiz. Professionelle Websites, Social Media & Hosting aus einer Hand." />
+  <meta name="author" content="Ruben Röösli" />
+  <meta property="og:title" content="Ruben Röösli – Webdesign & Entwicklung" />
+  <meta property="og:description" content="Websites, die begeistern – und verkaufen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rubenroeoesli.github.io" />
+  <meta property="og:image" content="https://rubenroeoesli.github.io/assets/og-image.jpg" />
+  <title>Ruben Röösli – Webdesign & Entwicklung</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Seiteweite Ambient-Orbs -->
+  <div class="page-ambience" aria-hidden="true">
+    <div class="pa-orb pa-orb--1"></div>
+    <div class="pa-orb pa-orb--2"></div>
+    <div class="pa-orb pa-orb--3"></div>
+    <div class="pa-orb pa-orb--4"></div>
+  </div>
+
+  <!-- Ladescreen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <span>Ruben Röösli</span>
+    </div>
+  </div>
+
+  <!-- Sektions-Navigation (links) -->
+  <nav class="section-nav" id="section-nav" aria-label="Sektionsnavigation">
+    <button class="sn-dot active" data-section="home"         title="Start"        aria-label="Zur Startseite"></button>
+    <button class="sn-dot"        data-section="leistungen"   title="Leistungen"   aria-label="Zu Leistungen"></button>
+    <button class="sn-dot"        data-section="social-media" title="Social Media" aria-label="Zu Social Media"></button>
+    <button class="sn-dot"        data-section="portfolio"    title="Portfolio"    aria-label="Zu Portfolio"></button>
+    <button class="sn-dot"        data-section="ueber-mich"   title="Über mich"    aria-label="Zu Über mich"></button>
+    <button class="sn-dot"        data-section="warum-ich"    title="Warum ich?"   aria-label="Zu Warum ich"></button>
+    <button class="sn-dot"        data-section="preise"       title="Preise"       aria-label="Zu Preise"></button>
+    <button class="sn-dot"        data-section="kontakt"      title="Kontakt"      aria-label="Zu Kontakt"></button>
+  </nav>
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  NAVIGATION                             -->
+  <!-- ─────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Startseite">
+        Ruben Röösli
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+        <li><a href="#portfolio"  class="nav-link">Portfolio</a></li>
+        <li><a href="#ueber-mich" class="nav-link">Über mich</a></li>
+        <li><a href="#preise"     class="nav-link">Preise</a></li>
+        <li><a href="#kontakt"    class="nav-link nav-cta">Kontakt</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  HERO                                   -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-wrap">
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <span class="hero-badge reveal-up">
+          <span class="badge-pulse"></span>
+          Verfügbar · Schweiz
+        </span>
+
+        <h1 class="hero-name reveal-up" style="--delay:.08s">
+          Websites,<br/><span class="hero-line2">die <span class="cycle-wrap"><span id="hero-cycle" class="cycle-word">verkaufen.</span></span></span>
+        </h1>
+
+        <p class="hero-sub reveal-up" style="--delay:.18s">
+          Ich bin <strong>Ruben</strong> – Webdesigner aus Horw.
+          Ich baue Websites, die gut aussehen, schnell laden
+          und echte Anfragen bringen.
+        </p>
+
+        <div class="hero-actions reveal-up" style="--delay:.28s">
+          <a href="#portfolio" class="btn btn-primary">
+            Projekte ansehen
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+        </div>
+      </div>
+
+      <!-- Right: Floating project card (shows potential clients what's possible) -->
+      <div class="hero-visual reveal-up" style="--delay:.15s" aria-hidden="true">
+
+        <!-- Mini browser card -->
+        <div class="hv-card">
+          <div class="hv-chrome">
+            <span class="hv-dot"></span><span class="hv-dot"></span><span class="hv-dot"></span>
+            <div class="hv-url">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              dr-birgit-frank.ch
+            </div>
+          </div>
+          <div class="hv-screen">
+            <img
+              src="assets/dr-birgit-frank.jpg"
+              alt="dr-birgit-frank.ch"
+              class="hv-screenshot"
+            />
+          </div>
+        </div>
+
+        <!-- Floating quality badges -->
+        <div class="hv-badge hv-badge--perf">
+          <span class="perf-score">98</span>
+          <div class="perf-text">
+            <span class="perf-label">Performance</span>
+            <span class="perf-sub">Google PageSpeed</span>
+          </div>
+        </div>
+
+        <div class="hv-badge hv-badge--mobile">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          <span>Mobile optimiert</span>
+        </div>
+
+        <div class="hv-badge hv-badge--live">
+          <span class="live-dot"></span>
+          <span>Live & online</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee tech strip -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-inner">
+      <div class="marquee-track">
+        <span>Mehr Anfragen</span><span class="mq-sep">✦</span>
+        <span>Professioneller Auftritt</span><span class="mq-sep">✦</span>
+        <span>Schnelle Ladezeiten</span><span class="mq-sep">✦</span>
+        <span>Direkt & persönlich</span><span class="mq-sep">✦</span>
+        <span>Luzern & Umgebung</span><span class="mq-sep">✦</span>
+        <span>Mobil optimiert</span><span class="mq-sep">✦</span>
+        <span>Online sichtbar</span><span class="mq-sep">✦</span>
+        <span>Faire Preise</span><span class="mq-sep">✦</span>
+        <span>1–2 Wochen Lieferzeit</span><span class="mq-sep">✦</span>
+        <span>Keine Agentur</span><span class="mq-sep">✦</span>
+        <span>Alles aus einer Hand</span><span class="mq-sep">✦</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>Mehr Anfragen</span><span class="mq-sep">✦</span>
+        <span>Professioneller Auftritt</span><span class="mq-sep">✦</span>
+        <span>Schnelle Ladezeiten</span><span class="mq-sep">✦</span>
+        <span>Direkt & persönlich</span><span class="mq-sep">✦</span>
+        <span>Luzern & Umgebung</span><span class="mq-sep">✦</span>
+        <span>Mobil optimiert</span><span class="mq-sep">✦</span>
+        <span>Online sichtbar</span><span class="mq-sep">✦</span>
+        <span>Faire Preise</span><span class="mq-sep">✦</span>
+        <span>1–2 Wochen Lieferzeit</span><span class="mq-sep">✦</span>
+        <span>Keine Agentur</span><span class="mq-sep">✦</span>
+        <span>Alles aus einer Hand</span><span class="mq-sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  LEISTUNGEN                             -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section services" id="leistungen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">Was ich anbiete</span>
+        <h2 class="section-title reveal-up" style="--delay:.1s">
+          Was ich für Sie mache
+        </h2>
+        <p class="section-sub reveal-up" style="--delay:.18s">
+          Ich übernehme alles – von der ersten Idee bis die Seite live ist.
+          Kein Hin-und-her mit verschiedenen Leuten, keine langen Wartezeiten.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay:.0s" data-color="blue">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <path d="m8 11 3 3-3 3M13 17h3"/>
+            </svg>
+          </div>
+          <h3>Webdesign & Entwicklung</h3>
+          <p>Ich baue Websites von Grund auf – clean im Design, schnell im Browser, sauber im Code. Nichts von der Stange.</p>
+          <ul class="service-features">
+            <li>Responsive (Mobile-First)</li>
+            <li>Performance-Optimierung</li>
+            <li>CMS-Integration</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.08s" data-color="cyan">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <path d="M8 10h8M8 14h5"/>
+            </svg>
+          </div>
+          <h3>Hosting & Betreuung</h3>
+          <p>Ich kümmere mich darum, dass Ihre Website läuft, sicher ist und aktuell bleibt – ohne dass Sie sich darum sorgen müssen.</p>
+          <ul class="service-features">
+            <li>Managed Hosting & SSL</li>
+            <li>Laufende Wartung & Updates</li>
+            <li>24h Erreichbarkeit</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.16s" data-color="violet">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </div>
+          <h3>Content Creation</h3>
+          <p>Posts, Stories und Reels, die wirklich zu Ihnen passen – kein generischer Einheitsbrei, sondern Content mit Charakter.</p>
+          <ul class="service-features">
+            <li>Post- & Storydesign</li>
+            <li>Reels & Videoschnitt</li>
+            <li>CI-konform & markenstark</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay:.04s" data-color="pink">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>Ich übernehme Ihre Kanäle komplett – Planung, Posting, Kommentare und monatliche Auswertung. Sie müssen sich um nichts kümmern.</p>
+          <ul class="service-features">
+            <li>Redaktionsplan & Posting</li>
+            <li>Community Management</li>
+            <li>Monatsreporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-addon reveal-up" style="--delay:.12s" data-color="blue">
+          <span class="addon-badge">Add-on</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </div>
+          <h3>SEO-Optimierung</h3>
+          <p>SEO ist bei mir kein Nachgedanke – es steckt von Anfang an in der Website drin, dort wo es auch hingehört.</p>
+          <ul class="service-features">
+            <li>Keyword-Strategie & Meta-Tags</li>
+            <li>Technisches SEO</li>
+            <li>Strukturierte Daten</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-addon reveal-up" style="--delay:.2s" data-color="cyan">
+          <span class="addon-badge">Add-on</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 20V10M12 20V4M6 20v-6"/>
+            </svg>
+          </div>
+          <h3>Google Services</h3>
+          <p>Analytics, Search Console, Google Maps – ich richte alles ein, damit Sie sehen was auf Ihrer Website passiert und gefunden werden.</p>
+          <ul class="service-features">
+            <li>Google Analytics 4</li>
+            <li>Search Console</li>
+            <li>Google Business / Maps</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  SOCIAL MEDIA                           -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section social-media-section" id="social-media">
+    <div class="container">
+      <div class="sm-inner">
+
+        <!-- Left: Text content -->
+        <div class="sm-content reveal-left">
+          <span class="section-tag">Social Media</span>
+          <h2 class="sm-title">
+            Ihr Auftritt auf<br/>
+            <span class="gradient-text">Instagram & Co.</span>
+          </h2>
+          <p class="sm-desc">
+            Ich übernehme Ihre Social-Media-Kanäle komplett – von der Strategie bis zum fertigen Post.
+            Sie konzentrieren sich auf Ihr Geschäft, ich sorge für Ihren Auftritt.
+          </p>
+
+          <div class="sm-platforms">
+            <span class="sm-platform">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </span>
+            <span class="sm-platform">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+              TikTok
+            </span>
+          </div>
+
+          <ul class="sm-checklist">
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Monatlicher Redaktionsplan
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Posts, Stories & Reels
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Community Management & Kommentare
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              CI-konform – passend zu Ihrem Brand
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Monatliches Reporting & Analyse
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Kein Vertrag – monatlich kündbar
+            </li>
+          </ul>
+
+          <a href="#kontakt" class="btn btn-primary" style="margin-top:32px; align-self:flex-start">
+            Social Media anfragen
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Right: Phone mockup with fake posts -->
+        <div class="sm-visual reveal-right" aria-hidden="true">
+          <div class="sm-phone">
+            <!-- Post 1 -->
+            <div class="sm-post">
+              <div class="sm-post-header">
+                <div class="sm-avatar"></div>
+                <div class="sm-post-meta">
+                  <div class="sm-username"></div>
+                  <div class="sm-time"></div>
+                </div>
+              </div>
+              <div class="sm-post-img sm-post-img--1"></div>
+              <div class="sm-post-actions">
+                <span class="sm-action sm-action--heart">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  <span>248</span>
+                </span>
+                <span class="sm-action">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  <span>12</span>
+                </span>
+              </div>
+              <div class="sm-caption-lines">
+                <div class="sm-line sm-line--full"></div>
+                <div class="sm-line sm-line--half"></div>
+              </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="sm-post sm-post--reel">
+              <div class="sm-reel-bg"></div>
+              <div class="sm-reel-overlay">
+                <div class="sm-reel-badge">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Reel
+                </div>
+                <div class="sm-reel-stats">
+                  <span>1.2K</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Post 3 – Story preview -->
+            <div class="sm-post sm-post--story">
+              <div class="sm-story-ring">
+                <div class="sm-story-avatar"></div>
+              </div>
+              <div class="sm-story-label">Neue Story</div>
+              <div class="sm-story-views">↗ 340</div>
+            </div>
+          </div>
+
+          <!-- Floating stat badge -->
+          <div class="sm-stat-badge reveal-up" style="--delay:.3s">
+            <div class="sm-stat-icon">📈</div>
+            <div>
+              <div class="sm-stat-val">+42%</div>
+              <div class="sm-stat-lbl">Reichweite / Monat</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  PORTFOLIO                              -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">Referenzen</span>
+        <h2 class="section-title reveal-up" style="--delay:.1s">
+          Projekte, die für sich sprechen
+        </h2>
+        <p class="section-sub reveal-up" style="--delay:.18s">
+          Schauen Sie selbst.
+        </p>
+      </div>
+
+      <!-- Project Card -->
+      <div class="project-card reveal-up" style="--delay:.1s">
+        <div class="project-inner">
+
+          <!-- Browser Mockup -->
+          <div class="mockup-wrapper" id="mockup-1">
+            <div class="browser-mockup">
+              <div class="browser-chrome" aria-hidden="true">
+                <div class="browser-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="browser-url-bar">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>dr-birgit-frank.ch</span>
+                </div>
+                <div class="browser-btns" aria-hidden="true">
+                  <div class="browser-btn"></div><div class="browser-btn"></div>
+                </div>
+              </div>
+              <div class="browser-content">
+                <!--
+                  SCREENSHOT HINZUFÜGEN:
+                  Bild: assets/dr-birgit-frank.jpg
+                -->
+                <img
+                  src="assets/dr-birgit-frank.jpg"
+                  alt="Screenshot der Website Dr. Birgit Frank"
+                  class="site-screenshot"
+                  loading="lazy"
+                  onerror="this.style.display='none'; document.getElementById('ph-frank').style.display='flex'"
+                />
+                <!-- CSS Fallback – nur sichtbar wenn Bild nicht lädt -->
+                <div class="site-placeholder" aria-hidden="true" id="ph-frank" style="display:none">
+                  <div class="ph-nav">
+                    <div class="ph-logo-box"><div class="ph-logo-mark"></div><div class="ph-logo-text"></div></div>
+                    <div class="ph-nav-links"><div class="ph-link"></div><div class="ph-link"></div><div class="ph-link"></div><div class="ph-link"></div></div>
+                    <div class="ph-cta-mini"></div>
+                  </div>
+                  <div class="ph-hero">
+                    <div class="ph-hero-text">
+                      <div class="ph-h1 shimmer"></div>
+                      <div class="ph-h1-sub shimmer"></div>
+                      <div class="ph-h2 shimmer"></div>
+                      <div class="ph-cta-btn"></div>
+                    </div>
+                    <div class="ph-hero-img shimmer"></div>
+                  </div>
+                  <div class="ph-cards">
+                    <div class="ph-card shimmer"></div>
+                    <div class="ph-card shimmer"></div>
+                    <div class="ph-card shimmer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Info -->
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Webdesign</span>
+              <span class="project-tag">Entwicklung</span>
+              <span class="project-tag">Hosting</span>
+            </div>
+            <h3 class="project-title">Dr. med. Birgit Frank</h3>
+            <p class="project-desc">
+              Website für Dr. med. Birgit Frank, Ärztin in der Region.
+              Der Wunsch war klar: übersichtlich, seriös, auf dem Handy gut nutzbar.
+              Fertig in unter zwei Wochen.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Auf allen Geräten sauber dargestellt
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                SEO & schnelle Ladezeiten von Anfang an
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Einfache Navigation für Patientinnen und Patienten
+              </li>
+            </ul>
+            <a href="https://dr-birgit-frank.ch" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-link">
+              Website besuchen
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card reveal-up" style="--delay:.18s">
+        <div class="project-inner">
+
+          <!-- Browser Mockup -->
+          <div class="mockup-wrapper" id="mockup-2">
+            <div class="browser-mockup">
+              <div class="browser-chrome" aria-hidden="true">
+                <div class="browser-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="browser-url-bar">
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>maison82collective.ch</span>
+                </div>
+                <div class="browser-btns" aria-hidden="true">
+                  <div class="browser-btn"></div><div class="browser-btn"></div>
+                </div>
+              </div>
+              <div class="browser-content">
+                <img
+                  src="assets/maison82collective.jpg"
+                  alt="Screenshot der Website Maison82Collective"
+                  class="site-screenshot"
+                  loading="lazy"
+                  onerror="this.style.display='none'; document.getElementById('ph-maison').style.display='flex'"
+                />
+                <div class="site-placeholder site-placeholder--maison" aria-hidden="true" id="ph-maison" style="display:none">
+                  <div class="ph-nav">
+                    <div class="ph-logo-box"><div class="ph-logo-mark ph-logo-mark--maison"></div><div class="ph-logo-text"></div></div>
+                    <div class="ph-nav-links"><div class="ph-link"></div><div class="ph-link"></div><div class="ph-link"></div></div>
+                    <div class="ph-cta-mini ph-cta-mini--maison"></div>
+                  </div>
+                  <div class="ph-hero ph-hero--maison">
+                    <div class="ph-hero-text">
+                      <div class="ph-h1 shimmer"></div>
+                      <div class="ph-h1-sub shimmer"></div>
+                      <div class="ph-h2 shimmer"></div>
+                      <div class="ph-cta-btn ph-cta-btn--maison"></div>
+                    </div>
+                  </div>
+                  <div class="ph-cards">
+                    <div class="ph-card shimmer"></div>
+                    <div class="ph-card shimmer"></div>
+                    <div class="ph-card shimmer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Info -->
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-tag">Webdesign</span>
+              <span class="project-tag">Entwicklung</span>
+              <span class="project-tag">Branding</span>
+            </div>
+            <h3 class="project-title">Maison82Collective</h3>
+            <p class="project-desc">
+              Website für ein DJ-Kollektiv aus der Schweiz – spezialisiert auf House, Afro House und Tech House.
+              Modernes, animiertes Design das die Energie der Events widerspiegelt.
+            </p>
+            <ul class="project-highlights">
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Markantes Design mit Animationen
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Event-Übersicht & Booking-Kontakt
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Vollständig mobil optimiert
+              </li>
+            </ul>
+            <a href="https://maison82collective.ch" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-link">
+              Website besuchen
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-more reveal-up" style="--delay:.2s">
+        <p>Mehr kommt noch.</p>
+        <a href="#kontakt" class="link-arrow">
+          Ihr Projekt könnte als nächstes hier stehen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  ÜBER MICH                              -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section about" id="ueber-mich">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Photo -->
+        <div class="about-photo-wrap reveal-left">
+          <!--
+            FOTO: Bild als assets/ruben-roosli.png speichern.
+            Der schwarze Hintergrund passt perfekt zum dunklen Design.
+          -->
+          <img
+            src="assets/ruben-roosli.png"
+            alt="Ruben Röösli – Webdesigner"
+            class="about-photo"
+            onerror="this.parentElement.querySelector('.about-photo-fallback').style.display='flex'; this.style.display='none'"
+          />
+          <!-- Fallback wenn kein Foto -->
+          <div class="about-photo-fallback" style="display:none">
+            <span>RR</span>
+          </div>
+
+          <div class="about-badge">
+            <span class="badge-pulse"></span>
+            Verfügbar für neue Projekte
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text reveal-right">
+          <span class="section-tag">Über mich</span>
+          <h2 class="about-title">
+            Hi, ich bin Ruben –<br />
+            <span class="gradient-text">ich baue Ihre nächste Website.</span>
+          </h2>
+          <p class="about-desc">
+            Ich komme aus Horw bei Luzern und baue Websites – weil gutes Design einen
+            echten Unterschied macht und weil ich es mag, wenn Dinge einfach funktionieren.
+          </p>
+          <p class="about-desc">
+            Bei mir haben Sie einen direkten Draht. Kein Callcenter, keine Weiterleitung.
+            Wir besprechen zusammen was Sie brauchen, ich setze es um – fertig.
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-num-wrap">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-suffix">+</span>
+              </div>
+              <span class="stat-label">Projekte umgesetzt</span>
+            </div>
+            <div class="stat">
+              <div class="stat-num-wrap">
+                <span class="stat-prefix">&lt;</span>
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-suffix">h</span>
+              </div>
+              <span class="stat-label">Antwortzeit</span>
+            </div>
+            <div class="stat">
+              <div class="stat-num-wrap">
+                <span class="stat-number" data-count="1">0</span>
+                <span class="stat-suffix">–2 Wo.</span>
+              </div>
+              <span class="stat-label">bis zur fertigen Website</span>
+            </div>
+            <div class="stat">
+              <div class="stat-num-wrap">
+                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-suffix">%</span>
+              </div>
+              <span class="stat-label">direkter Kontakt</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  WARUM ICH?                             -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section why" id="warum-ich">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">Warum Ruben?</span>
+        <h2 class="section-title reveal-up" style="--delay:.1s">
+          Was mich von einer Agentur unterscheidet
+        </h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal-up" style="--delay:.0s" data-num="01">
+          <div class="why-number">01</div>
+          <h3>Alles aus einer Hand</h3>
+          <p>Ob Website, Hosting oder Social Media – Sie haben eine Ansprechperson. Das spart Zeit, Nerven und Missverständnisse.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:.08s" data-num="02">
+          <div class="why-number">02</div>
+          <h3>Direkte Kommunikation</h3>
+          <p>Kein Briefing das dreimal weitergereicht wird. Sie reden mit mir – und ich mach's.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:.16s" data-num="03">
+          <div class="why-number">03</div>
+          <h3>Modern & zukunftssicher</h3>
+          <p>Ich baue nichts, was in zwei Jahren veraltet aussieht. Clean, zeitlos, wartbar – und wenn sich etwas ändert, passen wir es an.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:.04s" data-num="04">
+          <div class="why-number">04</div>
+          <h3>Transparent & fair</h3>
+          <p>Sie bekommen ein klares Angebot, bevor ich anfange. Keine Überraschungen auf der Rechnung.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:.12s" data-num="05">
+          <div class="why-number">05</div>
+          <h3>Ergebnisorientiert</h3>
+          <p>Eine schöne Website ist nett. Eine Website, die Ihnen Anfragen bringt, ist besser. Auf das arbeite ich hin.</p>
+        </div>
+        <div class="why-card reveal-up" style="--delay:.2s" data-num="06">
+          <div class="why-number">06</div>
+          <h3>Schnell & zuverlässig</h3>
+          <p>Ich antworte schnell, liefere pünktlich und halte, was ich verspreche. Nicht mehr, nicht weniger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  PREISE                                 -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section pricing" id="preise">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal-up">Investition</span>
+        <h2 class="section-title reveal-up" style="--delay:.1s">
+          Transparente Preise
+        </h2>
+        <p class="section-sub reveal-up" style="--delay:.18s">
+          Kein Stundensatz-Roulette – klare Pakete, faire Preise. Alle Preise in CHF, exkl. MwSt.
+        </p>
+      </div>
+
+      <!-- Website Pakete -->
+      <div class="pricing-category reveal-up">
+        <div class="pricing-cat-label">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Website
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Basis -->
+        <div class="pricing-card pricing-featured reveal-up" style="--delay:.05s">
+          <div class="plan-popular">Beliebteste Wahl</div>
+          <div class="plan-tag">Einsteiger</div>
+          <h3 class="plan-name">Starter</h3>
+          <p class="plan-desc">Ideal für Selbstständige und kleine Betriebe – ein starker erster Auftritt im Netz.</p>
+          <div class="plan-price">
+            <span class="plan-amount">980</span>
+            <span class="plan-currency">CHF</span>
+          </div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>1-seitige Landing Page</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Responsiv & auf allen Geräten optimiert</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Kontaktformular (direkt an Ihre E-Mail)</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SEO-Grundsetup</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Design nach Ihren Wünschen</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Lieferzeit: 1–2 Wochen</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary btn-full">Jetzt anfragen</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card reveal-up" style="--delay:.2s">
+          <div class="plan-tag plan-tag--purple">Mehrseitig</div>
+          <h3 class="plan-name">Premium</h3>
+          <p class="plan-desc">Für Betriebe mit mehr Anforderungen – mehrseitig, individuell und vollständig massgeschneidert.</p>
+          <div class="plan-price">
+            <span class="plan-amount plan-amount--req">Preis auf Anfrage</span>
+          </div>
+          <ul class="plan-features">
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Mehrseitige Website (ab 3 Seiten)</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Individuelles Design & Animationen</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Terminbuchung / Buchungssystem</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Mehrsprachigkeit (DE, FR, EN)</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>SEO-Optimierung & Google Analytics</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Lieferzeit: nach Absprache</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-ghost btn-full">Anfragen</a>
+        </div>
+
+      </div>
+
+      <!-- Social Media Paket -->
+      <div class="pricing-category reveal-up" style="--delay:.1s; margin-top: 48px;">
+        <div class="pricing-cat-label pricing-cat-label--pink">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Social Media
+        </div>
+      </div>
+
+      <div class="pricing-grid pricing-grid--sm reveal-up" style="--delay:.15s">
+
+        <!-- Social Media Management -->
+        <div class="pricing-card pricing-card--sm">
+          <div class="plan-tag plan-tag--pink">Monatlich</div>
+          <h3 class="plan-name">Social Media Management</h3>
+          <p class="plan-desc">Ich übernehme Ihre Kanäle komplett. Planung, Content, Posting, Kommentare und Auswertung – Sie müssen sich um nichts kümmern.</p>
+          <div class="plan-price">
+            <span class="plan-amount plan-amount--req">Preis auf Anfrage</span>
+          </div>
+          <ul class="plan-features plan-features--cols">
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Monatlicher Redaktionsplan</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Posts, Stories & Reels</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Community Management</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Instagram & TikTok</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Monatliches Reporting</li>
+            <li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Monatlich kündbar</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-primary btn-full">Jetzt anfragen</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note reveal-up" style="--delay:.3s">
+        Alle Preise sind Richtwerte – das genaue Angebot erhalten Sie nach einem kostenlosen Erstgespräch.
+        <a href="#kontakt">Jetzt unverbindlich anfragen →</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  KONTAKT                                -->
+  <!-- ─────────────────────────────────────── -->
+  <section class="section contact" id="kontakt">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-left reveal-left">
+          <span class="section-tag">Kontakt</span>
+          <h2 class="contact-title">
+            Projekt?<br />
+            <span class="gradient-text">Schreiben Sie mir.</span>
+          </h2>
+          <p class="contact-desc">
+            Kurz beschreiben was Sie brauchen – ich melde mich schnell
+            zurück für ein kostenloses Erstgespräch.
+          </p>
+          <a href="mailto:rubenr@gmx.ch" class="contact-email-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            rubenr@gmx.ch
+          </a>
+        </div>
+
+        <div class="contact-right reveal-right">
+          <!--
+            FORMSPREE SETUP:
+            1. Konto erstellen auf formspree.io
+            2. Neue Form erstellen
+            3. "IHRE_FORMSPREE_ID" unten ersetzen (z.B. xpzgkwqj)
+          -->
+          <form
+            action="https://formspree.io/f/xojkrzav"
+            method="POST"
+            class="contact-form"
+            id="contact-form"
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Ihr Name" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required placeholder="ihre@email.ch" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Betreff</label>
+              <input type="text" id="subject" name="subject" placeholder="Ich brauche eine neue Website…" />
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" required rows="5" placeholder="Erzählen Sie mir von Ihrem Projekt…"></textarea>
+            </div>
+            <input type="text" name="_gotcha" style="display:none" />
+            <button type="submit" class="btn btn-primary btn-full">
+              Nachricht senden
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note">Lieber direkt? <a href="mailto:rubenr@gmx.ch">rubenr@gmx.ch</a></p>
+          </form>
+
+          <div class="form-success" id="form-success" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="44" height="44"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h4>Erhalten, danke!</h4>
+            <p>Ich melde mich bald bei Ihnen.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ─────────────────────────────────────── -->
+  <!--  FOOTER                                 -->
+  <!-- ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Ruben Röösli</span>
+          <p>Webdesign & Entwicklung<br />aus der Schweiz.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#leistungen">Leistungen</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#ueber-mich">Über mich</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Rechtliches</h4>
+            <ul>
+              <li><a href="impressum.html">Impressum</a></li>
+              <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Ruben Röösli – Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
